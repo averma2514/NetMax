@@ -1,0 +1,12 @@
+div{
+    height: 100px;
+    background-color: black;
+    width: 100px;
+    transition: 3s;
+}
+
+div:hover{
+    transform: translate(10);
+}
+
+

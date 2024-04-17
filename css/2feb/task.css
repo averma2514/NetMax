@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    justify-content: space-around;
+    display: flex;
+}
+.first,.second{
+    border: solid;
+    height: auto;
+    width: auto;
+    padding: 10%;
+}
+@media (min-width:400px) {
+    .container{
+        display: flex;
+    }   
+}
+/* @media (max-width:500px) {
+    
+} */

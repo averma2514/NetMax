@@ -1,0 +1,10 @@
+#div #inner #p{
+    background-color: blue;
+}
+
+/* div is parent and inner is child ">" is use for parent child relation
+ div > inner */
+
+ /* ~ is use for all sibling  */
+
+ /* + is use for only sibling  */

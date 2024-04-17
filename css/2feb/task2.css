@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    justify-content: space-around;
+    display: flex;
+    
+}
+
+p{
+    padding: 5px;
+    font-size: small;
+}
+
+@media (max-width:800px) {
+.nav{
+    display:grid;
+    justify-content:left;
+    padding-left: 20px;
+    /* padding: 5px; */
+}
+}

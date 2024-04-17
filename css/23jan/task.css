@@ -1,0 +1,33 @@
+
+#parent > p{
+    color: blue;
+}
+#first >p{
+    color: green;
+}
+
+div{
+    border: solid;
+}
+
+
+.button{
+    background-color: blue;
+}
+
+#parent > #second >p{
+    color: orange;
+}
+
+#parent > #second > button{
+    background-color: green;
+}
+
+#parent + button{
+    background-color: red;
+}
+
+div , button{
+    margin: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,428 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.nav{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    height: 44px;
+    background-color: #fafafc;
+    color: var(--r-globalnav-color);
+}
+.navin{
+    padding: 0px 22px;
+}
+#navul{
+    max-width: 1024px;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-left: 240px;
+    padding-left:44px ;
+    padding-right: 44px;
+    margin-right: 240px;
+    list-style: none;
+}
+
+#navul  img{
+    height: 20px;
+}
+
+li{
+    margin: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float: left;
+}
+
+.offer{
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 426px;
+    margin-right: 426px;
+    font-family: SF Pro Text","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+sup+a{
+    text-decoration: none;
+    color: #0066cc;
+}
+.container{
+    background-color: #fafafc;
+    color: rgb(29, 29, 31);
+    height: fit-content;
+    position: relative;
+}
+
+.des{
+    margin: 0 140px;
+    height: 248px;
+    position: relative;
+}
+.row
+{
+    display: flex;
+    /* position: relative; */
+}
+.first{
+    position: relative;
+    left: 0;
+    padding: 80px 0 64px;
+    width: 640px;
+}
+
+.first>h1,.first>p{
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+
+}
+.first>p{
+    margin: 0;
+    color: #6e6e73;
+}
+.second{
+    position: absolute;
+    right: 0; 
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding: 90px 0;
+}
+.needhelp,.visit{
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+}
+.helptext0{
+    margin: 0;
+}
+.helpimage>img ,.vistimage>img{
+    width: 36px;
+    height: 36px;
+    padding-right: 8px;
+    
+
+}
+.helpcontant  p,.visitcontant p{
+    margin: 0;
+    font-weight: 600;
+}
+.askhelp > a,.visitlink>a, .a{
+    text-decoration: none;
+    color: #06c;
+}
+.items{
+    display: flex;
+    padding: 10px 0px 40px;
+    padding-bottom: 62px;
+}
+.items a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    display: block;
+    color: #1d1d1f;
+    text-align: center;
+    
+}
+.items img{
+    height: 78px;
+    width: auto;
+}
+
+.sitems{
+        overflow: hidden;
+        border-radius: 18px;
+        height: 148px;
+        min-width: 136px;
+        padding: 18px 8px 16px;
+        box-sizing: border-box;
+}
+.sitems img{
+    padding-bottom: 16px;
+}
+
+.thelatest{
+    margin-left: 140px;
+    padding-left: 14px;
+    margin-right: auto;
+    width: 980px;
+}
+.heading, .subheading{
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+}
+.subheading{
+    color: #6e6e73;
+}
+.newitems .latest,.helpitems{
+    overflow: hidden;
+    height: 31rem;
+    object-fit: cover;
+    padding-bottom: 26px;
+    overscroll-behavior-x: contain;
+    overflow-x: scroll;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width: auto;
+}
+.latestitems{
+    display: flex;
+    position: relative;
+    
+    margin-left: 0;
+    transform: translateX(140px);
+    margin-right: 60px;
+    cursor: pointer;
+    width: 28rem;
+}
+
+.latestitems>img{
+    flex-direction: column;
+    position: relative;
+    border-radius: 18px;
+    white-space: normal;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+.discription{
+    position: absolute;
+    left: 0px;
+    padding: 30px;
+    width: 20rem;
+}
+.eyebrow{
+    margin-bottom: 0.4em;
+    font-size: 12px;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    color: #6e6e73;
+    width: 204px;
+    padding-bottom: 8px;
+}
+.header{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* color: #1d1d1f; */
+    text-decoration: none;
+}
+.iphone15dis .header,.black,.get6monthtext .header,.valtext .header, .macbookprodis .header, .paymentoptionsdis .header, .ipaddis .header, .applewatchultra2dis .header, .macbooksir15dis .header, .applewatchsedis .header{
+    color: #1d1d1f;
+}
+
+.iphone15prodiscription .header,.white,.iphone15prodiscription .dis, .blackunitysportbankdis .header,.blackunitysportbankdis .dis, .applewatchseries9dis .header,.applewatchseries9dis .dis, .ipadairdis .header,.ipadairdis .dis{
+    color: #f5f5f7;
+}
+
+.dis{
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.accessoriesdiv .text, .difftext,.loudtext,.helptext{
+    
+    display: flex;
+    margin-left: 140px;
+    padding-bottom: 14px;
+    margin-right: auto;
+    width: 980px;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+}
+
+.access>h2,.difftext>h2,.loudtext>h2,.helptext>h2{
+    margin: 0;
+    color: #e30000;
+    font-size: 28px;
+}
+.accessoriesdiv > .text,.difftext,.loudtext,.helptext{
+    display: flex;
+    margin: 0px 399.3px 0px 140px;
+    padding: 0px 0px 14px;
+}
+
+.accesstext>span,.difftext>span,.loudtext>span,.helptext>span{
+    color: #6e6e73;
+    font:28px;
+}
+.accessoriesitems,.loudandclearitems{
+    padding: 10px 0px 40px 0px;
+    display: flex;
+
+    overflow: hidden;
+    height: 29.41176rem;
+    padding-bottom: 26px;
+
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    position: relative;
+    white-space: nowrap;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+
+    width: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.accitems,.louditems{
+    margin-left: 0;
+    transform: translateX(140px);
+    display: flex;
+    margin-right: 20px;
+
+    justify-content: center;
+
+    flex-direction: column;
+    position: relative;
+    border-radius: 18px;
+    width: 28.23529rem;
+    padding: 30px;
+    white-space: normal;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+.difftext>h2,.loudtext>h2,.helptext>h2{
+color: #1d1d1f;
+}
+
+.astext{
+    
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.astext>h4{
+    margin: 0;;
+}
+.applestorediffitems{
+    height: 14.11765rem;
+    overflow: hidden;
+    padding-bottom: 26px;
+
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+
+    width: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+.diffitems{
+    margin-left: 0;
+    height: 14.11765rem;
+    width: 18.41176rem;
+    transform: translateX(140px);
+
+    margin-right: 20px;
+
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 18px;
+    white-space: normal;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    padding: 30px;
+}
+
+.icon{
+    height: 48px;
+    padding-bottom: 5px;
+}
+
+.astext{
+    padding-top: 0;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+
+.valentine>.valtext{
+    padding: 30px;
+    position: absolute;
+    
+}
+.accitems, .diffitems, .get6month ,.louditems{
+    background-color: #fff;
+}
+
+.difftext,.thelatest,.helpitems,.appleexperiencetext,.appleexperienceitems,.latest, .applestorediffitems , .loudandclearitems,.helptext, .loudtext,.valentine{
+    display: flex;
+}
+.quicklinks{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 max(22px,env(safe-area-inset-right)) 0 max(22px,env(safe-area-inset-left));
+
+}
+.summery{
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+
+    border-bottom: 1px solid var(--footer-border-color);
+    padding: 17px 0 11px;
+
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.33337;
+}
+.helpishere img{
+    width: 2000px;
+}
+
+.hide::-webkit-scrollbar {
+    display: none;
+}
+

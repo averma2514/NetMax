@@ -1,0 +1,8 @@
+.green{
+    outline-color: green;
+}
+
+.red{
+    border-color: red;
+    outline: red;
+}

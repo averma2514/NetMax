@@ -1,0 +1,15 @@
+.bga{
+    background-color: black;
+    height: 100px;
+}
+.form-size{
+    /* display: block; */
+    height: 100px;
+}
+
+.box{
+    /* height: min-content; */
+    border: 5px;
+    max-height: 100px;
+    overflow: hidden;
+}

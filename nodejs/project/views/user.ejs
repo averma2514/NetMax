@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>user data </h1>
+    <% for(let num of data.users) {%>
+        <div style="border:solid; margin:10px; padding:5px;">
+            <p><%= num.username %></p>
+            <p><%= num.age %></p>
+            <p><%= num.email %></p>
+            <button> <a href="/user/<%=num.id%>">learn more</a> </button>
+        </div>
+     <%}%>
+
+</body>
+</html>

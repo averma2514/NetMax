@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: blanchedalmond;
+    margin: 0;
+    position:sticky;
+    top:0px;
+}
+
+.na{
+    display: flex;
+    margin: 0;
+}
+
+li{
+    padding: 10px;
+    list-style-type: none;
+}

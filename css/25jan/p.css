@@ -1,0 +1,49 @@
+input:focus{
+    /* focus is when we click input tag to enter text */
+    /* when we click input tag then its backgroung color turn red */
+    background-color: red;
+}
+
+/* it take prefrence link>visited > active > hover */
+a:link{
+    /* color of link */
+    color: black;
+}
+a:visited{
+    /* visited when we once vist link */
+    color: rgb(164, 240, 0);
+}
+a:active{
+    /* active is when we click link */
+    color: wheat;
+}
+a:hover{
+    color: cadetblue;
+}
+
+div{
+    height: 70px;
+    overflow:hidden;
+    background-color: aqua;
+    /* transition is use to delay its work */
+    transition: 3s;
+}
+
+div:hover{
+    height: 200px;
+}
+
+div::first-letter{
+    color: red;
+}
+
+/* when we select text then it turn its color red  */
+p::selection{
+    background-color: red;
+}
+
+div{
+    /* we use transform when we want to change ists position wihtout effecting others element */
+    transform: translate(100px,100px);
+    transform: scale(.8);
+}

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+.nav{
+    background-color: aqua;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.outernav{
+    width: 60%;
+    
+}
+.innernav{
+    border-radius: 20px;
+    background-color: blue;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+}
