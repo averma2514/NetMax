@@ -21,8 +21,10 @@ async function addblogdata(req,res){
 
 async function readmore(req,res){
     const id = req.params
-    const {name,title,contant} = Blog.findOne({_id:id})
-    console.log(name,title,contant)
+    const {name} = await Blog.findOne({_id:id})
+    console.log(name)
+    // res.json({name})
+
 }
 
 module.exports = {showhomepage,addblog,addblogdata,readmore}
