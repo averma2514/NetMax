@@ -2,8 +2,10 @@ const product =require('../model/product.modul')
 
 //get function
 async function getproduct(req,res){
-    const productdata  = await product.find()
-    res.json({productdata})
+    // const productdata  = await product.find()
+    // res.json({productdata})
+    res.send(req.user.username)
+    
 }
 
 //post function

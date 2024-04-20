@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const db = require('./config/db.cofig')
 const cookieParser = require('cookie-parser')
+const middleware = require('./midleware/auth.middalware')
+const decoded = require('./utility/utility')
 
 const DOTENV = require('dotenv').config()
 const PORT = process.env.PORT || 8080
@@ -14,11 +16,11 @@ app.set('view engine',"ejs")
 app.use(cookieParser())
 
 app.get('/' , (req , res) => {
-    res.send("welcome")
+    res.send('welcome')
 })
 
 app.use('/student',require('./routes/students.routs'))
-app.use('/product',require('./routes/product.routes'))
+app.use('/product',middleware,require('./routes/product.routes'))
 app.use('/signin',require('./routes/sign.routes'))
 
 
