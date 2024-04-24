@@ -9,7 +9,7 @@
 
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/test')
+mongoose.connect('mongodb://localhost:27017/market')
 const mongodb = mongoose.connection
 
 mongodb.once('open',()=>{

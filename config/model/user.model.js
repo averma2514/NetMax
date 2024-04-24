@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
-    username:{
+    name:{
         type:String,
         required:true
     },
@@ -16,8 +16,12 @@ const userSchema = mongoose.Schema({
     phone:{
         type:Number,
         required:true
+    },
+    role:{
+        type:String,
+        default:"user"
     }
 })
 
-const User = mongoose.model("login",userSchema)
+const User = mongoose.model("user",userSchema)
 module.exports = User
