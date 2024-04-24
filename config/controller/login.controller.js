@@ -14,12 +14,17 @@ async function postsignin(req,res){
     const{username,email,password,phone} = req.body
 
     const hashed = await bcrypt.hashSync(password,10)
+    console.log(hashed)
     const status = await User.create({username,email,password:hashed,phone})
     
     const token = jwt.sign({ username,email,id : status._id }, process.env.JWT_SECRET)
 
     res.cookie('token', token)
     return res.redirect('/')
+}
+
+function getlogin(req,res){
+    
 }
 
 async function postLogin(req , res){
@@ -41,4 +46,14 @@ async function postLogin(req , res){
     
 }
 
-module.exports = {showsignin,postsignin,postLogin}
+function getAccount(req,res){
+    res.render('account')
+}
+
+function logout(req,res){
+    res.cookie("token","")
+    return res.redirect('../')
+}
+
+
+module.exports = {showsignin,postsignin,postLogin,getAccount,logout}

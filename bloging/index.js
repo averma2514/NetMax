@@ -6,10 +6,13 @@ app.use(express.static(__dirname +'/public'))
 app.use(express.json())
 
 app.set("view engine","ejs")
-require("dotenv").config();
-// const cookieParser =
 
-const port = 1000
+require("dotenv").config();     //to read .env file
+
+const cookieParser = require('cookies-parser')
+app.use(cookieParser())
+
+const port = process.env.PORT
 
 const db = require('./config/db.config')
 

@@ -20,7 +20,8 @@ app.get('/' , (req , res) => {
 })
 
 app.use('/student',require('./routes/students.routs'))
-app.use('/product',middleware,require('./routes/product.routes'))
+// app.use('/product',middleware,require('./routes/product.routes'))
+app.use('/product',require('./routes/product.routes'))
 app.use('/signin',require('./routes/sign.routes'))
 
 

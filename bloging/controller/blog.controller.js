@@ -2,7 +2,7 @@ const Blog = require('../modul/blog.modul')
 
 async function showhomepage(req,res){
     const data = await Blog.find()
-    res.render('../view/blog.view.ejs',{data})
+    res.render('blog.view.ejs',{data})
     // res.json({data})
 }
 

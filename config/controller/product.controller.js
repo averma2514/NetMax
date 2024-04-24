@@ -1,19 +1,32 @@
-const product =require('../model/product.modul')
+const Product =require('../model/product.modle')
+const Seller = require('../model/seller.model')
 
 //get function
 async function getproduct(req,res){
-    // const productdata  = await product.find()
-    // res.json({productdata})
-    res.send(req.user.username)
+    // if(!req.cookies.token){
+    //     return res.redirect('signup.ejs')
+        
+    // }
+    const productdata  = await Product.find().populate("seller")
+    res.json({productdata})
+    // res.send(req.user.username)
     
 }
 
-//post function
-async function postproduct(req,res){
-    const {name,price,category} = req.body
-    const productdata  = await product.create({name,price,category})
-    res.json({productdata})
+async function addSeller(req,res){
+    const {name,phone,email,city} = req.body
+    console.log(name,phone,email,city)
+    const status = await Seller.create({name,phone,email,city})
+    res.json(status)
+
 }
+
+async function addProduct(req,res){
+    const {name,price,category,seller} = req.body
+    const status = await Product.create({name,price,category,seller})
+    res.json(status)
+}
+
 
 async function updateproduct(req,res){
     const {id} = req.params
@@ -24,4 +37,4 @@ async function updateproduct(req,res){
     
 }
 
-module.exports = {getproduct,postproduct,updateproduct}
+module.exports = {getproduct,updateproduct,addSeller,addProduct}
