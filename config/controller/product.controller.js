@@ -1,16 +1,17 @@
+const Product = require('../model/product.modle')
 
 
-//get function
-async function getproduct(req,res){
-    // if(!req.cookies.token){
-    //     return res.redirect('signup.ejs')
-        
-    // }
+//get functionp
+async function getProduct(req,res){
+    if(!req.cookies.token){
+        return res.redirect('login.ejs')
+    }
+
     const productdata  = await Product.find().populate("seller")
-    res.json({productdata})
-    // res.send(req.user.username)
-    
+    // res.json({productdata})
+    res.render('product',{productdata})
 }
 
 
-module.exports = {getproduct}
+
+module.exports = {getProduct}

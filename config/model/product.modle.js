@@ -3,28 +3,28 @@ const mongoose = require('mongoose')
 const productschema = new mongoose.Schema({
     name:{
         type:String,
-        require:true
+        required:true
     },
     price:{
         type:Number,
-        require:true
+        required:true
     },
     category:{
         type:String,
-        require:true
+        required:true
     },
     description:{
         type:String,
-        require:true,
+        required:true,
         max:200
     },
-    img:{
+    image:{
         type:String,
-        require:true
+        required:true
     },
     seller:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:'seller'
+        ref:'user'
     }
 })
 

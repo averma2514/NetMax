@@ -1,0 +1,24 @@
+<%- include('./components/header.ejs') %>
+
+<div class="constainer m-5">
+    <% for(data of productdata) { %>
+
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title"><%= data.name %></h3>
+              <h5 class="card-price">$<%= data.price %></h5>
+              <p class="card-text"><%= data.description %></p>
+              <p class="card-text">Seller name : <%= data.seller.name %></p>
+
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+
+
+        <% } %>
+</div>
+
+
+
+<%- include('./components/footer.ejs') %>

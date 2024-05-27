@@ -1,8 +1,9 @@
 const express = require('express')
 const routes = express.Router()
-const {getproduct,updateproduct,addSeller,addProduct} = require('../controller/product.controller')
+const {getProduct} = require('../controller/product.controller')
 
-routes.get('/',getproduct)
+routes.get('/',getProduct)
+
 
 // routes.post('/addseller',addSeller)
 // routes.put('/update/:id',updateproduct)

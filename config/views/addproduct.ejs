@@ -1,24 +1,30 @@
 <%- include('./components/header.ejs') %>
-<div class="constainer">
-    <form action="">
-        <div class="mb-3" >
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<div class="acontainer" style="width: 50%;" >
+    <form action="" method="post" enctype="multipart/form-data">
+        
+        <div class="mb-3"> 
+          <label  class="form-label">Product Name</label>
+          <input type="text" class="form-control" name="name" required>
+        </div>
+        
+        <div class="mb-3">
+          <label  class="form-label">Price</label>
+          <input type="text" class="form-control" name="price" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label  class="form-label">Category</label>
+          <input type="text" class="form-control" name="category" required>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+        <div class="mb-3">
+          <label  class="form-label">Description</label>
+          <input type="text" class="form-control" name="description" required>
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Image</label>
+          <input type="text" name="name" placeholder="Enter thumbnail for image" required>
+          <input type="file" class="form-control" name="thumbnail" accept="image/*" required>
+        </div>
+        
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 </div>

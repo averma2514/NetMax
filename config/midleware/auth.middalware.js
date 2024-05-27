@@ -2,13 +2,20 @@ const decoded = require('../utility/utility')
 
 function middleware(req,res,next){
     const token = req.cookies.token
-
     if(!token){
-        res.redirect('/signin/signin')
+        return res.redirect('../signin/sellerlogin')
     }
-
     req.user = decoded(token)
     next()
 }
 
-module.exports = middleware
+function isSeller(req,res,next){
+    const role = req.user.role
+    if(role=="user"){
+        return res.redirect('../')
+    }
+    next()
+}
+
+
+module.exports = {middleware,isSeller}

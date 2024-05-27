@@ -31,7 +31,7 @@ async function postLoginSeller(req,res){
             role : isUser.role
         } , process.env.JWT_SECRET)
         res.cookie('token' , token )
-        res.redirect('../')
+        res.redirect('../seller/')
     }else{
         res.render('login' , { error : "Invalid Password" } )
 
@@ -100,7 +100,7 @@ async function postLogin(req , res){
    if(!checkingPassword){
     return res.redirect('login',{error:"user not found"})
    }
-   const token = jwt.sign({name:user.name,email:user.email,id:user.id},process.env.JWT_SECRET)
+   const token = jwt.sign({name:user.name,email:user.email,id:user.id,role:user.role},process.env.JWT_SECRET)
     res.cookie("token" , token)
     res.redirect('../')
     // res.json({ msg : "got in" , success : true  })
